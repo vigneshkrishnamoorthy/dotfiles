@@ -14,7 +14,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'bling/vim-airline'
 Plugin 'mattboehm/vim-accordion'
 Plugin 'junegunn/goyo.vim'                  " distraction free writing
-Plugin 'mhinz/vim-startify'                 " start-page for vim
+Plugin 'mhinz/vim-startify'
 
 " Syntax
 Plugin 'scrooloose/syntastic'
