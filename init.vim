@@ -18,6 +18,7 @@ Plugin 'mhinz/vim-startify'                 " start-page for vim
 
 " Syntax
 Plugin 'scrooloose/syntastic'
+Plugin 'jiangmiao/auto-pairs'               " inserts brackets, parens, quotes in pairs
 
 " Languages
 Plugin 'tpope/vim-markdown'
