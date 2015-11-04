@@ -22,10 +22,20 @@
 #  options(defaultPackages = c(old, "MASS"), repos = r)
 #})
 
+local({
+  r <- getOption("repos")
+  r["CRAN"] <- "http://cran.cnr.berkeley.edu/"
+  options(repos = r)
+})
+
 # sets the stringsAsFactors as false for all CSV reads
 options(stringsAsFactors = FALSE)
 
+# forces to never use scientific notation
+options(scipen=10)
+
 options(max.print = 100)
+options(width = 80)
 
 # sets the editor to neovim
 options(editor ="nvim")
