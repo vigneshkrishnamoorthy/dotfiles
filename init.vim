@@ -39,13 +39,25 @@ Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
 " ==== Settings ==== "
-"Tabstops
-set tabstop=4
-set shiftwidth=4
-set expandtab
 
 "Sensibles
 set number
+
+set tabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
+set autoindent
+
+set ignorecase
+set smartcase
+
+set hlsearch
+set incsearch
+set history=1000
+set undolevels=1000
+
+set showmatch
 colorscheme jellybeans
 
 "Split navigation and creation
