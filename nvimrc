@@ -39,6 +39,10 @@ Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
 " ==== Settings ==== "
+"Tabstops
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 "Sensibles
 set number
