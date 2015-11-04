@@ -38,27 +38,7 @@ Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 
-" ==== Settings ==== "
-
-"Sensibles
-set number
-
-set tabstop=4
-set shiftwidth=4
-set shiftround
-set expandtab
-set autoindent
-
-set ignorecase
-set smartcase
-
-set hlsearch
-set incsearch
-set history=1000
-set undolevels=1000
-
-set showmatch
-colorscheme jellybeans
+" ==== Plugin Settings ==== "
 
 "Split navigation and creation
 " /creation
@@ -106,3 +86,37 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+
+" ==== Sensible Settings ==== "
+
+colorscheme jellybeans  " colors
+
+syntax on   " Enables syntax highlighting
+set hidden  " hides buffers
+set wrap linebreak nolist   " soft wrap text
+set incsearch   " fuzzy searching
+set number      " show line numbers
+
+set tabstop=4       " set tab size to 4 spaces
+set expandtab       " insert spaces instead of tabs
+set shiftround      " indent to nearest tabstop
+set numberwidth=4   " width of line number field
+set shiftwidth=4    " default number of spaces for indentation
+
+set autochdir       " autoupdate current director
+set backup          " automatic backup
+set cursorline      " show cursor line
+
+set noerrorbells    " disable annoyring system bells
+
+" Relative numbering to Numbering toggle
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
