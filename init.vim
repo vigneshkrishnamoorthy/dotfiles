@@ -15,6 +15,7 @@ Plugin 'bling/vim-airline'
 Plugin 'mattboehm/vim-accordion'
 Plugin 'junegunn/goyo.vim'                  " distraction free writing
 Plugin 'mhinz/vim-startify'                 " start-page for vim
+Plugin 'vim-scripts/Colour-Sampler-Pack'
 
 " Syntax
 Plugin 'scrooloose/syntastic'
@@ -97,6 +98,18 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 map <C-D-G> :Goyo<cr>
+
+" /terminal mode remap
+tnoremap <Esc> <C-\><C-n>
+" /navigation to other modes from terminal mode
+tnoremap <A-h> <C-\><C-n><C-w>h
+tnoremap <A-j> <C-\><C-n><C-w>j
+tnoremap <A-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 
 " ==== Sensible Settings ==== "
 
