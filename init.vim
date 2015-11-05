@@ -19,6 +19,7 @@ Plugin 'mhinz/vim-startify'                 " start-page for vim
 " Syntax
 Plugin 'scrooloose/syntastic'
 Plugin 'jiangmiao/auto-pairs'               " inserts brackets, parens, quotes in pairs
+Plugin 'scrooloose/nerdcommenter'
 
 " Languages
 Plugin 'tpope/vim-markdown'
@@ -40,6 +41,8 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'Shougo/vimshell.vim' "Have to set up vim-shell
 
 call vundle#end()
+
+filetype plugin on
 
 " ==== Plugin Settings ==== "
 
