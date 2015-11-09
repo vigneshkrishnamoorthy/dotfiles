@@ -117,7 +117,7 @@ colorscheme jellybeans      " colors
 
 syntax on                   " Enables syntax highlighting
 set hidden                  " hides buffers
-set wrap linebreak nolist   " soft wrap text
+set wrap                    " soft wrap text
 set incsearch               " fuzzy searching
 set number                  " show line numbers
 
