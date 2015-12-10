@@ -149,4 +149,4 @@ set autoread        " reload the file when it has been changed outside of vim
 set spelllang=en_uk         " define default dictionary for spell checking
 
 " List of files ignored by vim
-set wildignore=*.swp,*.bak,*.pyc,*.class 
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
