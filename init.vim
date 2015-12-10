@@ -140,7 +140,7 @@ set showmatch       " show matching parantheses
 
 set ignorecase      " ignore case when searching
 
-" set clipboard+=unnamed      " Use system clipboard
+set clipboard+=unnamedplus      " Use system clipboard
 
 set go+=a           " visual selection automatically copied to clipboard
 set title           " changes the terminal's title
