@@ -90,15 +90,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 
-" ==== Key remap ==== "
-" Removing hard mapped C-J insert mode
-let g:C_Ctrl_j = "off"
-map <C-j> <C-w>j
-" /split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
 
 map <C-D-G> :Goyo<cr>
 
@@ -141,3 +132,10 @@ set spelllang=en_uk         " define default dictionary for spell checking
 
 " List of files ignored by vim
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
+
+" ==== Key remap ==== "
+" /split navigation
+nnoremap <S-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
