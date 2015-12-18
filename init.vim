@@ -136,6 +136,9 @@ set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
 " ==== Key remap ==== "
 " /split navigation
 nnoremap <S-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <S-K> <C-W><C-K>
+nnoremap <S-L> <C-W><C-L>
+nnoremap <S-H> <C-W><C-H>
+
+" /buffer navigation
+nnoremap <C-L> <C-^>
