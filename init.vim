@@ -132,6 +132,8 @@ set spelllang=en_uk         " define default dictionary for spell checking
 
 " List of files ignored by vim
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
+set nobackup
+set nowritebackup
 
 " ==== Key remap ==== "
 " /split navigation
