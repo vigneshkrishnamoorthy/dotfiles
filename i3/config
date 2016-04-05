@@ -152,26 +152,24 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# finds out, if available0)
+# Set colors that don't change
+SET $MCOLOR #DC3522
+SET $FCOLOR #374140
+
 bar {
     status_command i3blocks
     position bottom
     workspace_buttons yes
     colors {
-        # Set background and color settings
-        background #FFFFFF
-        statusline #999999
+        background #DC3522
+        statusline #838386
         # separator  #51C4D4
 
         # Type             border  background font
-        focused_workspace  #777F8B #777F8B #ecedee
-        active_workspace   #777F8B #777F8B #ecedee
-        inactive_workspace #DEDFE3 #DEDFE3 #767E8A
-        urgent_workspace   #DEDFE3 #DEDFE3 #767E8A
-        # Set 2: Nice and Light
-        # focused_workspace #FFFFFF #FFFFFF #000000
-        # inactive_workspace #FFFFFF #FFFFFF #000000
-        # urgent_workspace #b492b6 #b492b6 #cccccc
-        # Set 3: 
+        focused_workspace  #DC3522 #374140 #D9C9BE
+        active_workspace   #DC3522 #D9C9BE #374140
+        inactive_workspace #DC3522 #D9C9BE #D9C9BE
+        urgent_workspace   #DC3522 #1E1E20 #374140
     }
 }
