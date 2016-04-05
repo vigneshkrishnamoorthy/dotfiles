@@ -4,7 +4,6 @@ The list of configuration files contained in the repo is here. Symlink it for pa
 
 - nvimrc: configuration file for neovim
 - Rprofile: configuration file for R
+- i3_config: configuration file for i3 window manager
+- xres: resources file for URxvt terminal emulator
 
-# Comments
-
-If you feel that the document is not commented well enough, feel free to contact me for more information.
