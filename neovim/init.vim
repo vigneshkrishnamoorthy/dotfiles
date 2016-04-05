@@ -11,7 +11,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-sensible'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattboehm/vim-accordion'
 Plugin 'junegunn/goyo.vim'                  " distraction free writing
 Plugin 'mhinz/vim-startify'                 " start-page for vim
@@ -70,7 +71,8 @@ let g:NERDTreeIndicatorMapCustom = {
 
 "Airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='papercolor'
+" let g:airline_theme='papercolor'
+let g:AirlineTheme='papercolor'
 
 "Supertab
 " /scrolls down the list instead of up
@@ -88,8 +90,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-
 
 map <C-D-G> :Goyo<cr>
 
