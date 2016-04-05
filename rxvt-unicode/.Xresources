@@ -1,11 +1,13 @@
 ! Install extensions
-URxvt.perl-ext-common: default, clipboard, selection-to-clipboard
+URxvt.perl-ext-common: default, clipboard, selection-to-clipboard, resize-font
 
 ! Paste from clipboard
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 *URxvt*scrollBar: False
-
+! Key bindings for font size
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
 ! Color-scheme : Relic Dark
 ! Author       : stark <stark@openmailbox.org>
 
