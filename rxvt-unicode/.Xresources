@@ -1,7 +1,7 @@
 ! Install extensions
-URxvt.perl-ext-common: default, clipboard
+URxvt.perl-ext-common: default, clipboard, selection-to-clipboard
 
-! Copy-paste function
+! Paste from clipboard
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 
 *URxvt*scrollBar: False
