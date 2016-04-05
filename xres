@@ -1,3 +1,9 @@
+! Install extensions
+URxvt.perl-ext-common: default, clipboard
+
+! Copy-paste function
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
 *URxvt*scrollBar: False
 
 ! Color-scheme : Relic Dark
