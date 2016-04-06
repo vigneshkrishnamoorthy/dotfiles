@@ -161,15 +161,15 @@ bar {
     position bottom
     workspace_buttons yes
     colors {
-        background #DC3522
+        background #334D5C
         statusline #838386
         # separator  #51C4D4
 
         # Type             border  background font
-        focused_workspace  #DC3522 #374140 #D9C9BE
-        active_workspace   #DC3522 #D9C9BE #374140
-        inactive_workspace #DC3522 #D9C9BE #D9C9BE
-        urgent_workspace   #DC3522 #1E1E20 #374140
+        focused_workspace  #334D5C #374140 #EFC94C
+        active_workspace   #334D5C #D9C9BE #D9C9BE
+        inactive_workspace #334D5C #D9C9BE #D9C9BE
+        urgent_workspace   #334D5C #DF5849 #374140
     }
 }
 
@@ -177,7 +177,7 @@ new_window pixel 1
 new_float none
 # Set colors for windows
 #Class                  border  Backgr. text    indicator child_border
-client.focused          #DC3522 #374140 #000000 #000000     #DC3522
-client.focused_inactive #D9C9BE #374140 #000000 #000000     #DC3522
-client.urgent           #DC3522 #374140 #000000 #000000     #DC3522
-client.background       #374140 #374140 #000000 #000000     #DC3522
+client.focused          #549E39 #374140 #000000 #000000     #549E39
+client.focused_inactive #334D5C #374140 #000000 #000000     #334D5C
+client.urgent           #EFC94C #374140 #000000 #000000     #EFC94C
+client.background       #334D5C #374140 #000000 #000000     #334DFC
