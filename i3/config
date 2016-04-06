@@ -43,6 +43,8 @@ bindsym $mod+d exec --no-startup-id rofi -show run
 # Set background color to solid
 exec --no-startup-id xsetroot -solid "#222222"
 
+# set border to null on edges
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -170,3 +172,12 @@ bar {
         urgent_workspace   #DC3522 #1E1E20 #374140
     }
 }
+
+new_window pixel 1
+new_float none
+# Set colors for windows
+#Class                  border  Backgr. text    indicator child_border
+client.focused          #DC3522 #374140 #000000 #000000     #DC3522
+client.focused_inactive #D9C9BE #374140 #000000 #000000     #DC3522
+client.urgent           #DC3522 #374140 #000000 #000000     #DC3522
+client.background       #374140 #374140 #000000 #000000     #DC3522
