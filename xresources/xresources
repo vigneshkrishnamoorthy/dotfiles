@@ -19,34 +19,71 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.resize-font.smaller: C-Down
 URxvt.resize-font.bigger: C-Up
 
+!Acid Drop color scheme by Alexis « Sam » « Siphonay » V.
 
-! Color-scheme : Relic Dark
-! Author       : stark <stark@openmailbox.org>
+*.background:		#444444
+*.foreground:		#EFEFEC
+*.cursorColor:		#EFEFEC
 
-*background: #1D2426
-*foreground: #8FA388
+!BLK
+URxvt.color0:     #212121
+URxvt.color8:     #616161
 
-! Alternate foreground
-!*foreground: #AB9C71
+!RED
+URxvt.color9:     #FF1744
+URxvt.color1:     #D50000
 
-*cursorColor: #BE5E1E
+!GRN
+URxvt.color10:    #00E676
+URxvt.color2:     #00C853
 
-*color0:  #39474A
-*color1:  #986345
-*color2:  #788249
-*color3:  #9B6A46
-*color4:  #3E5951
-*color5:  #B9924A
-*color6:  #5d796a
-*color7:  #977D5E
-*color8:  #4C5F63
-*color9:  #B07350
-*color10: #869151
-*color11: #AF6B42
-*color12: #567A6E
-*color13: #D69D55
-*color14: #668574
-*color15: #AB9C71
+!BLU
+URxvt.color12:    #00E5FF
+URxvt.color4:     #00B8D4
+
+!YEL
+URxvt.color11:    #EEFF41
+URxvt.color3:     #C6FF00
+
+!CYN
+URxvt.color14:    #64FFDA
+URxvt.color6:     #1DE9B6
+
+!MAG
+URxvt.color13:    #D500F9
+URxvt.color5:     #AA00FF
+
+!WHT
+URxvt.color7:     #BDBDBD
+URxvt.color15:    #EEEEEE
+
+!! Color-scheme : Relic Dark
+!! Author       : stark <stark@openmailbox.org>
+!
+!*background: #1D2426
+!*foreground: #8FA388
+!
+!! Alternate foreground
+!!*foreground: #AB9C71
+!
+!*cursorColor: #BE5E1E
+!
+!*color0:  #39474A
+!*color1:  #986345
+!*color2:  #788249
+!*color3:  #9B6A46
+!*color4:  #3E5951
+!*color5:  #B9924A
+!*color6:  #5d796a
+!*color7:  #977D5E
+!*color8:  #4C5F63
+!*color9:  #B07350
+!*color10: #869151
+!*color11: #AF6B42
+!*color12: #567A6E
+!*color13: #D69D55
+!*color14: #668574
+!*color15: #AB9C71
 
 ! Change font size to 10
 URxvt.font: xft:Inconsolata:size=10
