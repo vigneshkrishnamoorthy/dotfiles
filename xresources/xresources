@@ -1,3 +1,6 @@
+! Set terminal to xrvt
+URxvt*termName: rxvt-unicode
+
 ! Install extensions
 URxvt.perl-ext-common: default, clipboard, selection-to-clipboard, resize-font
 

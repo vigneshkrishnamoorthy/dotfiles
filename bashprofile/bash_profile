@@ -3,4 +3,5 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+sudo ip link set wlp3s0 down
 [[ -z $DISPLAY && $XDG_VTNR -eq 1  ]] && exec startx
