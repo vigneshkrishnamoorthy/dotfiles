@@ -41,7 +41,7 @@ bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
 # bindsym $mod+d exec dmenu_run -p vigkri$ -nb '#2C3E50' -nf '#E74C3C' -sb '#E74C3C' -sf '#2C3E50'
 
 # Set background color to solid
-exec --no-startup-id xsetroot -solid "#222222"
+# exec --no-startup-id xsetroot -solid "#222222"
 
 # set border to null on edges
 
