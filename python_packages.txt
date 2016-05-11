@@ -1,0 +1,7 @@
+louis==2.6.5
+packaging==16.7
+pyparsing==2.1.1
+pyxdg==0.25
+ranger==1.7.2
+six==1.10.0
+team==1.0
