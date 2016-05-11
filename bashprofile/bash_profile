@@ -4,5 +4,4 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 nohup redshift -m vidmode -v > ~/.logs/redshift.log
-sudo ip link set wlp3s0 down
 [[ -z $DISPLAY && $XDG_VTNR -eq 1  ]] && exec startx
