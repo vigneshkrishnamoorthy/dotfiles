@@ -38,6 +38,7 @@ bindsym $mod+Shift+q kill
 
 # Start rofi or dmenu
 bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
+bindsym $mod+t exec i3lock -c 000000 -n
 # bindsym $mod+d exec dmenu_run -p vigkri$ -nb '#2C3E50' -nf '#E74C3C' -sb '#E74C3C' -sf '#2C3E50'
 
 # Set background color to solid
