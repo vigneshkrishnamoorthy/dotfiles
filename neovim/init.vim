@@ -122,7 +122,7 @@ set showmatch       " show matching parantheses
 
 set ignorecase      " ignore case when searching
 
-set clipboard+=unnamedplus      " Use system clipboard
+set clipboard+=unnamed     " Use system clipboard
 
 set go+=a           " visual selection automatically copied to clipboard
 set title           " changes the terminal's title
@@ -148,3 +148,13 @@ set nowritebackup
 " :tab Navigation
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
+
+" ==== PEP-8 Python ==== "
+au BufNewFile, BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=4
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix

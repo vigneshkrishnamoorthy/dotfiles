@@ -9,8 +9,9 @@ URxvt.internalBorder: 25
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-! Paste from clipboard
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+! Copy and Paste using Clipboard
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.C-v: perl:clipboard:paste
 
 ! Remove scroll bar
 *URxvt*scrollBar: False
