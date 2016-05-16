@@ -10,8 +10,8 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Copy and Paste using Clipboard
-URxvt.keysym.C-c: perl:clipboard:copy
-URxvt.keysym.C-v: perl:clipboard:paste
+URxvt.keysym.M-C-c: perl:clipboard:copy
+URxvt.keysym.M-C-v: perl:clipboard:paste
 
 ! Remove scroll bar
 *URxvt*scrollBar: False

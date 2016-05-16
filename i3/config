@@ -147,15 +147,16 @@ bar {
     position bottom
     workspace_buttons yes
     colors {
-        background #334D5C
-        statusline #838386
+    # Adobe Colors: Campfire
+        background #588C7E
+        statusline #E7E7E5
         # separator  #51C4D4
 
         # Type             border  background font
-        focused_workspace  #334D5C #374140 #EFC94C
-        active_workspace   #334D5C #D9C9BE #D9C9BE
-        inactive_workspace #334D5C #D9C9BE #D9C9BE
-        urgent_workspace   #334D5C #DF5849 #374140
+        focused_workspace  #588C7E #F2AE72 #8C4646
+        active_workspace   #588C7E #F2E394 #F2E394
+        inactive_workspace #588C7E #F2E394 #F2E394
+        urgent_workspace   #588C7E #8C4646 #588C7E
     }
 }
 
