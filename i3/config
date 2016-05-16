@@ -19,6 +19,7 @@ bindsym Mod1+l exec i3lock -c 000000 -n
 # bindsym $mod+d exec dmenu_run -p vigkri$ -nb '#2C3E50' -nf '#E74C3C' -sb '#E74C3C' -sf '#2C3E50'
 
 # Execute statements on startup
+exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
 for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
 exec --no-startup-id urxvt -name scratchpad -e ncmpcpp
 # exec --no-startup-id xsetroot -solid "#222222"
@@ -161,8 +162,14 @@ bar {
 }
 
 # Window borders
-new_window pixel 1
+for_window [class="^.*"] border pixel 1
+# new_window pixel 1
 new_float none
+
+# Inner gaps
+gaps inner 5
+gaps outer 5
+
 # Set colors for windows
 #Class                  border  Backgr. text    indicator child_border
 client.focused          #549E39 #374140 #000000 #000000     #549E39
