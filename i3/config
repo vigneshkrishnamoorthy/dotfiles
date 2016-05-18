@@ -20,9 +20,11 @@ bindsym Mod1+l exec i3lock -c 000000 -n
 
 # Execute statements on startup
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
-for_window [instance="scratchpad"] move window to scratchpad, scratchpad show
-exec --no-startup-id urxvt -name scratchpad -e ncmpcpp
-# exec --no-startup-id xsetroot -solid "#222222"
+# -- scratchpad initialize
+for_window [instance="music"] move window to scratchpad, scratchpad show
+exec --no-startup-id urxvt -name music -e ncmpcpp
+for_window [instance="tasks"] move window to scratchpad, scratchpad show
+exec --no-startup-id urxvt -name tasks
 
 # Create i3 based links for volumne control
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
