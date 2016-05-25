@@ -8,8 +8,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Interface
-" - nerdtree explorer
+" - file explorer and finder
 Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'xuyuanp/nerdtree-git-plugin'
 " - airline on the bottom
 Plugin 'vim-airline/vim-airline'
@@ -31,6 +32,8 @@ Plugin 'elzr/vim-json'
 " - miscellaneous
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
+Plugin 'davidbeckingsale/writegood.vim'
+Plugin 'tpope/vim-speeddating'
 " - other languages
 Plugin 'vim-latex/vim-latex'
 
@@ -42,6 +45,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " External Integrations
+" - vimwiki
+Plugin 'vimwiki/vimwiki'
 " - github
 Plugin 'tpope/vim-fugitive'
 " - pandoc
@@ -146,6 +151,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" ==== Vim Wiki Settings ==== "
+
 
 " ==== Python Settings ==== "
 
