@@ -8,90 +8,46 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Interface
+" - nerdtree explorer
 Plugin 'scrooloose/nerdtree'
 Plugin 'xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-sensible'
+" - airline on the bottom
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" - use splits effectively
 Plugin 'mattboehm/vim-accordion'
-Plugin 'junegunn/goyo.vim'                  " distraction free writing
-Plugin 'mhinz/vim-startify'                 " start-page for vim
+" - create a start page for use
+Plugin 'mhinz/vim-startify'
+" - colors and themes
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-scripts/Colour-Sampler-Pack'
 
-" Syntax
+" Syntax and Language Options
+" - syntastic
 Plugin 'scrooloose/syntastic'
-Plugin 'jiangmiao/auto-pairs'               " inserts brackets, parens, quotes in pairs
-Plugin 'scrooloose/nerdcommenter'
-
-" Languages
-Plugin 'tpope/vim-markdown'
+" - covers json files
 Plugin 'elzr/vim-json'
-Plugin 'klen/python-mode'
-Plugin 'vim-latex/vim-latex'
-Plugin 'Vim-R-plugin2'
-
-" Completion
+" - miscellaneous
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
+" - other languages
+Plugin 'vim-latex/vim-latex'
 
-" Code Display
-Plugin 'flazz/vim-colorschemes'
-Plugin 'nanotech/jellybeans.vim'
+" Python Integration
+Plugin 'klen/python-mode'
 
-" Integrations
+" Markdown Integration
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" External Integrations
+" - github
 Plugin 'tpope/vim-fugitive'
-"Plugin 'Shougo/vimproc.vim'
-"Plugin 'Shougo/vimshell.vim' "Have to set up vim-shell
 
 call vundle#end()
 
 filetype plugin on
-
-" ==== Plugin Settings ==== "
-
-"Split navigation and creation
-" /creation
-set splitright
-set splitbelow
-
-"NERDTree
-map <C-e> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrows = 1
-" /git-nerd-tree configuration
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
-
-"Airline
-let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme='papercolor'
-let g:AirlineTheme='papercolor'
-
-"Supertab
-" /scrolls down the list instead of up
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
-"Vim-markdown
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
-
-"Syntastic 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-map <C-D-G> :Goyo<cr>
 
 " ==== Sensible Settings ==== "
 
@@ -102,9 +58,6 @@ set hidden                  " hides buffers
 set wrap                    " soft wrap text
 set incsearch               " fuzzy searching
 set number                  " show line numbers
-
-" autocmd InsertEnter * :set relativenumber
-" autocmd InsertLeave * :set number
 
 set tabstop=4       " set tab size to 4 spaces
 set expandtab       " insert spaces instead of tabs
@@ -130,26 +83,69 @@ set autoread        " reload the file when it has been changed outside of vim
 
 set spelllang=en_uk         " define default dictionary for spell checking
 
-" List of files ignored by vim
+" -- list of files ignored by vim
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
 set nobackup
 set nowritebackup
 
-" ==== Key remap ==== "
-" /split navigation
-"nnoremap <S-J> <C-W><C-J>
-"nnoremap <S-K> <C-W><C-K>
-"nnoremap <S-L> <C-W><C-L>
-"nnoremap <S-H> <C-W><C-H>
+" ==== Movement and Key Bindings Settings ==== "
 
-" /buffer navigation
-" nnoremap <C-L> <C-^>
+let mapleader = "\<TAB>"
+
+" /Quit Stuff
+nnoremap <Leader>q :q<CR>
+
+" /split navigation
+nnoremap <Leader>j <C-W><C-J>
+nnoremap <Leader>k <C-W><C-K>
+nnoremap <Leader>l <C-W><C-L>
+nnoremap <Leader>h <C-W><C-H>
 
 " :tab Navigation
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
 
-" ==== PEP-8 Python ==== "
+" ==== Plugin Settings ==== "
+
+" - Split navigation and creation
+set splitright
+set splitbelow
+
+" - NERDTree
+map <C-e> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrows = 1
+" /git-nerd-tree configuration
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
+
+" - Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:AirlineTheme='papercolor'
+
+" - Supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" - Syntastic 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" ==== Python Settings ==== "
+
 au BufNewFile, BufRead *.py
     \ set tabstop=4
     \ set softtabstop=4
@@ -158,3 +154,11 @@ au BufNewFile, BufRead *.py
     \ set expandtab
     \ set autoindent
     \ set fileformat=unix
+
+" ==== Markdown Settings ==== "
+
+let g:vim_markdown_math = 1
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_folding_disabled = 1
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
