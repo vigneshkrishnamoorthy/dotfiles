@@ -44,6 +44,9 @@ Plugin 'plasticboy/vim-markdown'
 " External Integrations
 " - github
 Plugin 'tpope/vim-fugitive'
+" - pandoc
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 
 call vundle#end()
 
@@ -81,7 +84,7 @@ set go+=a           " visual selection automatically copied to clipboard
 set title           " changes the terminal's title
 set autoread        " reload the file when it has been changed outside of vim
 
-set spelllang=en_uk         " define default dictionary for spell checking
+set spelllang=en_us         " define default dictionary for spell checking
 
 " -- list of files ignored by vim
 set wildignore=*.swp,*.bak,*.pyc,*.class,*.py~
