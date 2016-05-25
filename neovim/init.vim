@@ -109,7 +109,10 @@ nnoremap <Leader>k <C-W><C-K>
 nnoremap <Leader>l <C-W><C-L>
 nnoremap <Leader>h <C-W><C-H>
 
-" :tab Navigation
+" /buffer navigation
+nnoremap <Leader>b :bnext<CR>
+
+" :tab navigation
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
 
