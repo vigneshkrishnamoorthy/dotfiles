@@ -2,7 +2,7 @@
 URxvt*termName: rxvt-unicode
 
 ! Install extensions
-URxvt.perl-ext-common: default, clipboard, selection-to-clipboard, resize-font
+URxvt.perl-ext-common: default, clipboard, selection-to-clipboard, resize-font, keyboard-select, font-size
 
 ! Borders
 URxvt.internalBorder: 10
@@ -10,15 +10,17 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Copy and Paste using Clipboard
-URxvt.keysym.M-C-c: perl:clipboard:copy
-URxvt.keysym.M-C-v: perl:clipboard:paste
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 ! Remove scroll bar
 *URxvt*scrollBar: False
 
 ! Key bindings for font size
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger: C-Up
+URxvt.keysym.C-minus: perl:font-size:decrease
+URxvt.keysym.C-equal: perl:font-size:increase
+URxvt.font-size.step: 4
 
 ! Change font size to 10
 URxvt.font: xft:Inconsolata:size=10

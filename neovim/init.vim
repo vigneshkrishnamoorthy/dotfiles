@@ -30,6 +30,7 @@ Plugin 'scrooloose/syntastic'
 " - covers json files
 Plugin 'elzr/vim-json'
 " - miscellaneous
+Plugin 'tpope/vim-sensible'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'davidbeckingsale/writegood.vim'
@@ -156,7 +157,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " ==== Vim Wiki Settings ==== "
-
+let g:vimwiki_list = [{'path': '/home/vigneshk/knowledgebase/', 'path_html': '/home/vigneshk/knowledgebase/html/'}]
 
 " ==== Python Settings ==== "
 
