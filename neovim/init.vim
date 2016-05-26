@@ -35,8 +35,11 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ervandew/supertab'
 Plugin 'davidbeckingsale/writegood.vim'
 Plugin 'tpope/vim-speeddating'
-" - other languages
+" - other languages (latex/R)
 Plugin 'vim-latex/vim-latex'
+
+" R Integration
+Plugin 'jalvesaq/Nvim-R'
 
 " Python Integration
 Plugin 'klen/python-mode'
