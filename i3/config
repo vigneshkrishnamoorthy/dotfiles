@@ -1,85 +1,49 @@
-# Set modifier as win-key
-set $mod Mod4
-
-# Font for window titles
-font xft:Inconsolata 10
-
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
-# kill focused window
+# Modifiers
+set $mod Mod4 
+floating_modifier $mod 
 bindsym $mod+Shift+q kill
 
-# Key Bound execution statements
-bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
-bindsym Mod1+l exec i3lock -c 000000 -n
-
-# Execute statements on startup
+# ===== STARTUP EXECUTORS =====
+# -- launch wallpaper
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
 # -- scratchpad initialize
 for_window [instance="music"] move window to scratchpad, scratchpad show
 exec --no-startup-id urxvt -name music -e ncmpcpp
 for_window [instance="tasks"] move window to scratchpad, scratchpad show
-exec --no-startup-id urxvt -name tasks
 
-# Create i3 based links for volumne control
+# ===== APPLICATION STARTERS ===== #
+bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
+bindsym Mod1+l exec i3lock -c 000000 -n
+
+# ===== KEYBINDINGS ===== #
+# -- volumn keys
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
-
-# change focus
+# -- change window focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
-# move focused window
+# -- move window focus
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
+# -- window splits 
 bindsym $mod+b split h
-
-# split in vertical orientation
 bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
+# -- toggle fullscreen
 bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
+# -- change container layout
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
+# -- tiling/floating toggle
 bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
+# -- change focus to floating windows
 bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
-
-# switch to workspace
+# -- switch workspaces
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -90,8 +54,7 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
-
-# move focused container to workspace
+# -- move containers to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
@@ -102,22 +65,18 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-
-# reload the configuration file
+# -- scratchpad
+bindsym Mod1+s scratchpad show
+bindsym Mod1+shift+s move scratchpad
+# -- i3 Actions
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# resize window (you can also use the mouse for that)
+# Resize Mode bindings
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym j resize shrink height 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym h resize shrink width 10 px or 10 ppt
@@ -136,14 +95,25 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Scratch pad
-bindsym Mod1+s scratchpad show
-bindsym Mod1+shift+s move scratchpad
+# ====== COLORS AND STUFF ======
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available0)
-# Set colors that don't change
+# Font for window titles
+font xft:Inconsolata 10
+# Window borders
+for_window [class="^.*"] border pixel 3
+new_float none
+# Gaps
+gaps inner 5
+gaps outer 10
 
+# Set colors for windows
+#Class                  border  Backgr. text    indicator child_border
+client.focused          #549E39 #374140 #000000 #000000     #549E39
+client.focused_inactive #334D5C #374140 #000000 #000000     #334D5C
+client.urgent           #EFC94C #374140 #000000 #000000     #EFC94C
+client.background       #334D5C #374140 #000000 #000000     #334DFC
+
+# i3-bar on bottom
 bar {
     status_command i3blocks
     position bottom
@@ -161,19 +131,3 @@ bar {
         urgent_workspace   #588C7E #8C4646 #588C7E
     }
 }
-
-# Window borders
-for_window [class="^.*"] border pixel 1
-# new_window pixel 1
-new_float none
-
-# Inner gaps
-gaps inner 5
-gaps outer 5
-
-# Set colors for windows
-#Class                  border  Backgr. text    indicator child_border
-client.focused          #549E39 #374140 #000000 #000000     #549E39
-client.focused_inactive #334D5C #374140 #000000 #000000     #334D5C
-client.urgent           #EFC94C #374140 #000000 #000000     #EFC94C
-client.background       #334D5C #374140 #000000 #000000     #334DFC
