@@ -49,8 +49,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " External Integrations
-" - vimwiki
-Plugin 'vimwiki/vimwiki'
 " - github
 Plugin 'tpope/vim-fugitive'
 " - pandoc
@@ -159,9 +157,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" ==== Vim Wiki Settings ==== "
-let g:vimwiki_list = [{'path': '/home/vigneshk/knowledgebase/', 'path_html': '/home/vigneshk/knowledgebase/html/'}]
-
 " ==== Python Settings ==== "
 
 au BufNewFile, BufRead *.py
@@ -173,10 +168,15 @@ au BufNewFile, BufRead *.py
     \ set autoindent
     \ set fileformat=unix
 
-" ==== Markdown Settings ==== "
+" ==== Markdown/Vim-Pandoc Settings ==== "
+" TODO: Fix bibliography tools in vim-pandoc
+" TODO: Execute text formatting using <leader> 
+" TODO: button remaps for quick pandoc pdfs
 
 let g:vim_markdown_math = 1
 let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_folding_disabled = 1
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
-
+" - pandoc settings
+let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
+let g:pandoc#modules#disabled = ["folding"]

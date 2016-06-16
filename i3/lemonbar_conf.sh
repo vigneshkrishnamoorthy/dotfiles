@@ -1,6 +1,12 @@
-#! /bin/bash
+#!/usr/bin/bash
 
-weather() {
-    api=https://api.forecast.io/forecast/de03ae002484c27dd0623cf89a727af4/55.681497,12.564272
-    echo "$api"
+# Define the clock
+Clock() {
+    DATETIME=$(date "+%a %b %d, %T")
+    echo -n "$DATETIME"
 }
+
+while true; do
+        echo "%{c}%{B#588C7E}%{F#FFD767} $(Clock) %{F-}%{B-}"
+        sleep 1
+done
