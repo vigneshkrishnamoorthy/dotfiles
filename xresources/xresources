@@ -1,8 +1,13 @@
 ! Set terminal to xrvt
 URxvt*termName: rxvt-unicode
+URxvt*secondaryScroll: true
+URxvt*saveLines: 5000
 
 ! Install extensions
-URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,resize-font,keyboard-select,font-size
+URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,resize-font,keyboard-select,font-size,matcher
+
+! Other settings
+URxvt.matcher.button: 1
 
 ! Borders
 URxvt.internalBorder: 10
