@@ -9,7 +9,6 @@ exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_dee
 # -- scratchpad initialize
 for_window [instance="music"] move window to scratchpad, scratchpad show
 exec --no-startup-id urxvt -name music -e ncmpcpp
-for_window [instance="tasks"] move window to scratchpad, scratchpad show
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal

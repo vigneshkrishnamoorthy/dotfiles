@@ -22,6 +22,8 @@ header_visibility = "yes"
 statusbar_visibility = "yes"
 titles_visibility = "no"
 
+# Script
+execute_on_song_change = "/home/vigneshk/.ncmpcpp/on_song_change.sh"
 
 # Colors
 progressbar_color = "white"
