@@ -1,7 +1,6 @@
 #! /bin/bash
 
-ARTIST=`mpc | head -1 | sed -E 's/(.*)-(.*)/\1/'`
-TRACK=`mpc | head -1 | sed -E 's/(.*)-(.*)/\2/'`
+ARTIST=`mpc -f %artist% | head -1`
+TRACK=`mpc -f %title% | head -1` 
 
-echo $ARTIST >> /tmp/play_artist.txt
-echo $TRACK >> /tmp/play_track.txt
+echo $ARTIST,$TRACK >> /home/$USER/.ncmpcpp/playcounter.txt
