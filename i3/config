@@ -4,12 +4,13 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
-# -- launch wallpaper
+# -- autostarts
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
+exec (tmux new-session -s dropdown -d ncmpcpp && tmux split-window -h ranger)
 
 # -- scratchpad initialize
 for_window [instance="music"] move window to scratchpad, move position 25 0
-exec --no-startup-id urxvt -geometry 190x30 -name music -e ncmpcpp
+exec --no-startup-id urxvt -geometry 190x30 -name music -e tmux attach-session -t dropdown
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
