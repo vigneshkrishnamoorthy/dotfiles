@@ -42,6 +42,8 @@ The list of configuration files contained in the repo is here. Symlink it for pa
 This is a slightly complicated system.
 - create the files and folders described in the conf file.
 - symbolic link the *mpd.conf* to the location.
+- also create copy at `/etc/mpd.conf`
+    - this is required since on boot-up, MPD idiotically looks it up here
 - run `mpd ~/.config/mpd/mpd.conf`
 - Now run the client of choice
     - to rescan the system:
@@ -54,9 +56,11 @@ This is a slightly complicated system.
 
 - create folder called `.ncmpccp` at home.
 - symbolic link the config file to `~/.ncmpcpp/config`
+- symbolic link the script to the config folder with the same name.
 - run the client as usual.
 
 ## Bash profile
 
 - Delete the bash profile at home/$user.
-- symbolic link the configuration to `~/.bash_profile` edit the core to do any on-login executions.
+- symbolic link the configuration to `~/.bash_profile`
+- symbolic link the bashrc to `~/.bashrc`
