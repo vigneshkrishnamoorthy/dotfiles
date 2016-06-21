@@ -6,9 +6,10 @@ bindsym $mod+Shift+q kill
 # ===== STARTUP EXECUTORS =====
 # -- launch wallpaper
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
+
 # -- scratchpad initialize
-for_window [instance="music"] move window to scratchpad, scratchpad show
-exec --no-startup-id urxvt -name music -e ncmpcpp
+for_window [instance="music"] move window to scratchpad, move position 25 0
+exec --no-startup-id urxvt -geometry 190x30 -name music -e ncmpcpp
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
