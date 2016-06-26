@@ -58,3 +58,4 @@ alias ls='ls --color=auto'
 BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/nano
 # >>>>>END ADDED BY CNCHI INSTALLER<<<<< #
+source /usr/bin/activate.sh
