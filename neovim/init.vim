@@ -54,6 +54,8 @@ Plugin 'tpope/vim-fugitive'
 " - pandoc
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+" - ledger
+Plugin 'ledger/vim-ledger'
 
 call vundle#end()
 
@@ -180,3 +182,6 @@ let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 " - pandoc settings
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
 let g:pandoc#modules#disabled = ["folding"]
+" - vim-ledger settings
+let g:ledger_maxwidth = 80
+let g:ledger_fillstring = '   -'
