@@ -1,0 +1,14 @@
+#!/bin/bash
+
+keepassProcess=$(pidof keepassx)
+
+if [[ -z $keepassProcess ]]; then
+  #if it was accidentally killed, spawn again
+  keepassx &
+  sleep 1
+  kpWid=$(pfw)
+  echo $kpWid > /tmp/keepasswindow
+else
+  #process exists, toggle visibility
+  mapw -t $(cat /tmp/keepasswindow)
+fi ;
