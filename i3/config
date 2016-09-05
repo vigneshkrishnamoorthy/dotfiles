@@ -6,7 +6,7 @@ bindsym $mod+Shift+q kill
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
-exec (tmux new-session -s dropdown -d ncmpcpp && tmux split-window -h ranger && tmux split-window -h && tmux select-layout even-horizontal)
+exec (tmux new-session -s dropdown -d ncmpcpp && tmux split-window -h && tmux select-layout even-horizontal)
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
