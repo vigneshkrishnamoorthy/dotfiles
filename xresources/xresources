@@ -12,6 +12,9 @@ URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
+! Keyboard Select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
 ! Borders
 URxvt.internalBorder: 10
 URxvt.iso14755: false
