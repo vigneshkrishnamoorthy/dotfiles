@@ -4,7 +4,7 @@ URxvt*secondaryScroll: true
 URxvt*saveLines: 5000
 
 ! Install extensions
-URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,resize-font,keyboard-select,font-size,matcher
+URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,resize-font,keyboard-select,font-size,matcher,url-select
 
 ! Other settings
 URxvt.matcher.button: 1
@@ -18,6 +18,9 @@ URxvt.iso14755_52: false
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
 
 ! Remove scroll bar
 *URxvt*scrollBar: False
