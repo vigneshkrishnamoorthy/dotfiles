@@ -4,10 +4,16 @@ URxvt*secondaryScroll: true
 URxvt*saveLines: 5000
 
 ! Install extensions
-URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,resize-font,keyboard-select,font-size,matcher,url-select
+URxvt.perl-ext-common: default,clipboard,selection-to-clipboard,keyboard-select,matcher,url-select,resize-font
 
 ! Other settings
 URxvt.matcher.button: 1
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+! Keyboard Select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
 
 ! Borders
 URxvt.internalBorder: 10
@@ -19,16 +25,12 @@ URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
-URxvt.url-select.launcher: chromium
-URxvt.url-select.underline: true
+! Font resize
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
 
 ! Remove scroll bar
 *URxvt*scrollBar: False
-
-! Key bindings for font size
-URxvt.keysym.C-minus: perl:font-size:decrease
-URxvt.keysym.C-equal: perl:font-size:increase
-URxvt.font-size.step: 4
 
 ! Change font size to 10
 URxvt.font: xft:Inconsolata:size=10
