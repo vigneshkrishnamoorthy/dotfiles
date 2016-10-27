@@ -6,6 +6,7 @@ bindsym $mod+Shift+q kill
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
 exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
+exec guake
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
