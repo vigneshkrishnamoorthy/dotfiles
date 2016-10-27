@@ -11,6 +11,10 @@ The list of configuration files contained in the repo is here. Use gnu-stow dire
     - this can be overridden by editing the script for i3bar.
 - Reset i3 with mod+shift+R
 
+### Toggling KeepassX2
+
+- Remember to install `wmutils` so that window manipulation is possible.
+
 ## Neovim
 
 - Create folder `~/.config/nvim/`
