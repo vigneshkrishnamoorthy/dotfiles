@@ -5,19 +5,22 @@ bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
-exec feh --bg-scale /home/vigneshk/projects/dotfiles/wallpapers/minimalistic_deer.png
+exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).md
 exec guake
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
 for_window [class="keepassx"] floating enable
+for_window [instance="journal"] move window to scratchpad
+for_window [instance="jrnl"] move window to scratchpad
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
+bindsym $mod+n exec . /home/vigneshk/.config/i3/toggleKeepass
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
-bindsym $mod+n exec . /home/vigneshk/.config/i3/toggleKeepass
+# -- drive push/pull toggle
 bindsym Mod1+p exec "drive push --no-prompt /home/vigneshk/jrnl; echo Successful"
 bindsym Mod1+o exec "drive pull --ignore-name-clashes --fix-name-clashes /home/vigneshk/jrnl; echo Successful"
 
