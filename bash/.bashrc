@@ -48,7 +48,7 @@ function parse_git_dirty {
 
 export PS1="\033[38;5;4m\u\[\e[m\]|\[\e[33m\]\W\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\]$> "
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
