@@ -18,6 +18,8 @@ bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 bindsym $mod+n exec . /home/vigneshk/.config/i3/toggleKeepass
+bindsym Mod1+p exec "drive push --no-prompt /home/vigneshk/jrnl; echo Successful"
+bindsym Mod1+o exec "drive pull --ignore-name-clashes --fix-name-clashes /home/vigneshk/jrnl; echo Successful"
 
 # ===== KEYBINDINGS ===== #
 # -- volumn keys
