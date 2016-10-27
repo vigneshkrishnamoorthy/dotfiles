@@ -1,10 +1,10 @@
 #!/bin/bash
 
-keepassProcess=$(pidof keepassx)
+keepassProcess=$(pidof keepassx2)
 
 if [[ -z $keepassProcess ]]; then
   #if it was accidentally killed, spawn again
-  keepassx &
+  keepassx2 &
   sleep 1
   kpWid=$(pfw)
   echo $kpWid > /tmp/keepasswindow
