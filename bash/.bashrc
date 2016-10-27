@@ -15,8 +15,7 @@ function parse_git_branch() {
 function parse_git_dirty {
 	status=`git status 2>&1 | tee`
 	dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
-	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
-	ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
+	untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"` ahead=`echo -n "${status}" 2> /dev/null | grep "Your branch is ahead of" &> /dev/null; echo "$?"`
 	newfile=`echo -n "${status}" 2> /dev/null | grep "new file:" &> /dev/null; echo "$?"`
 	renamed=`echo -n "${status}" 2> /dev/null | grep "renamed:" &> /dev/null; echo "$?"`
 	deleted=`echo -n "${status}" 2> /dev/null | grep "deleted:" &> /dev/null; echo "$?"`
@@ -54,8 +53,6 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-# >>>>BEGIN ADDED BY CNCHI INSTALLER<<<< #
-BROWSER=/usr/bin/chromium
-EDITOR=/usr/bin/nano
-# >>>>>END ADDED BY CNCHI INSTALLER<<<<< #
 source /usr/share/autoenv-git/activate.sh
+BROWSER=/usr/bin/google-chrome-stable
+EDITOR=/usr/bin/nvim
