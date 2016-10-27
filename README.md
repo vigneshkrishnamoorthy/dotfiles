@@ -1,16 +1,6 @@
 # Dotfiles
 
-The list of configuration files contained in the repo is here. Symlink it for painlessness.
-
-- nvimrc: configuration file for neovim.
-- Rprofile: configuration file for R.
-- i3: configuration file for i3wm and i3bar.
-- Xresources: resources file for URxvt terminal emulator.
-- bashprofile: bash profile to load stuff on login.
-- music-player-daemon: mpd config.
-- ncmpcpp: configuration file for the ncmpcpp client.
-- redshift: redshift location and settings.
-- wallpapers: simple wallpapers.
+The list of configuration files contained in the repo is here. Use gnu-stow directly to avoid all sort of pains from now on.
 
 ## i3 Setup
 
@@ -20,6 +10,10 @@ The list of configuration files contained in the repo is here. Symlink it for pa
 - remember to install **acpi** for showing battery with i3bar.
     - this can be overridden by editing the script for i3bar.
 - Reset i3 with mod+shift+R
+
+### Toggling KeepassX2
+
+- Remember to install `wmutils` so that window manipulation is possible.
 
 ## Neovim
 
@@ -42,8 +36,8 @@ The list of configuration files contained in the repo is here. Symlink it for pa
 This is a slightly complicated system.
 - create the files and folders described in the conf file.
 - symbolic link the *mpd.conf* to the location.
-- also create copy at `/etc/mpd.conf`
-    - this is required since on boot-up, MPD idiotically looks it up here
+- also create copy at `/etc/mpd.conf` 
+    - this is required since on boot-up, MPD idiotically looks it up here as well for some reason.
 - run `mpd ~/.config/mpd/mpd.conf`
 - Now run the client of choice
     - to rescan the system:
