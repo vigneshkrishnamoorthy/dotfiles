@@ -6,7 +6,7 @@ bindsym $mod+Shift+q kill
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
 exec guake
-exec "drive pull --ignore-name-clashes --fix-name-clashes /home/vigneshk/jrnl; echo Successful"
+exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
 exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).md
 
 # -- scratchpad initialize
@@ -22,8 +22,8 @@ bindsym $mod+n exec . /home/vigneshk/.config/i3/toggleKeepass
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 # -- drive push/pull toggle
-bindsym Mod1+p exec "drive push --no-prompt /home/vigneshk/jrnl; echo Successful"
-bindsym Mod1+o exec "drive pull --ignore-name-clashes --fix-name-clashes /home/vigneshk/jrnl; echo Successful"
+bindsym Mod1+p exec "drive push --no-prompt $HOME/jrnl; echo Successful"
+bindsym Mod1+o exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
 
 # ===== KEYBINDINGS ===== #
 # -- volumn keys
