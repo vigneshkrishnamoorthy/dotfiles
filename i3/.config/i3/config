@@ -5,8 +5,9 @@ bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
-exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).md
 exec guake
+exec "drive pull --ignore-name-clashes --fix-name-clashes /home/vigneshk/jrnl; echo Successful"
+exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).md
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
