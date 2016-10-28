@@ -12,6 +12,8 @@ exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
 for_window [class="keepassx"] floating enable
+for_window [class="Zeal"] floating enable
+for_window [class="zeal"] floating enable
 for_window [instance="journal"] move window to scratchpad
 for_window [instance="jrnl"] move window to scratchpad
 
