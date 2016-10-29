@@ -1,6 +1,6 @@
 ! Set terminal to xrvt
 URxvt*termName: rxvt-unicode
-URxvt*secondaryScroll: true
+URxvt*secondaryScroll: false
 URxvt*saveLines: 5000
 
 ! Install extensions

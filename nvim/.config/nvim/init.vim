@@ -32,6 +32,7 @@ Plugin 'elzr/vim-json'
 " - miscellaneous
 Plugin 'tpope/vim-sensible'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 Plugin 'davidbeckingsale/writegood.vim'
 Plugin 'tpope/vim-speeddating'
