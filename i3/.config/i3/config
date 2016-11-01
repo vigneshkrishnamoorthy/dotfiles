@@ -20,7 +20,7 @@ for_window [instance="jrnl"] move window to scratchpad
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
-bindsym $mod+n exec . /home/vigneshk/.config/i3/toggleKeepass
+bindsym $mod+n exec . /home/vigneshk/.scripts/toggleKeepass
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 # -- drive push/pull toggle
