@@ -7,7 +7,7 @@ bindsym $mod+Shift+q kill
 # -- autostarts
 exec guake
 exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
-exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).md
+exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).wiki
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable

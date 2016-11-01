@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+filetype plugin on
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
@@ -57,6 +57,8 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 " - ledger
 Plugin 'ledger/vim-ledger'
+" - vimwiki
+Plugin 'vimwiki/vimwiki.git'
 
 call vundle#end()
 
