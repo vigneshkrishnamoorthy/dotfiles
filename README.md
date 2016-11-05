@@ -1,6 +1,9 @@
 # Dotfiles
 
-The list of configuration files contained in the repo is here. Use gnu-stow directly to avoid all sort of pains from now on.
+The list of configuration files contained in the repo is here. Use gnu-stow directly to avoid all sort of pains from now on. Here are a few additional packages that have to be installed to make this work:
+
+- `wmutils`: window manipulation for KeepassX system.
+- `xdotool`: window manipulation for the jrnl system in place.
 
 ## i3 Setup
 
@@ -10,10 +13,6 @@ The list of configuration files contained in the repo is here. Use gnu-stow dire
 - remember to install **acpi** for showing battery with i3bar.
     - this can be overridden by editing the script for i3bar.
 - Reset i3 with mod+shift+R
-
-### Toggling KeepassX2
-
-- Remember to install `wmutils` so that window manipulation is possible.
 
 ## Neovim
 
