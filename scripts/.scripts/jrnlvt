@@ -1,0 +1,15 @@
+#!/bin/bash
+
+wid=$(xdotool search --classname jrnl)
+
+if [ -z "$wid" ]; then
+    urxvt -name jrnl -geometry 140x50 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).wiki
+    wid=$(xdotool search --classname jrnl)
+    xdotool windowfocus $wid
+    xdotool key Control_L+1
+elif [ -z "$(xdotool search --onlyvisible --classname jrnl 2>/dev/null)" ]; then
+  xdotool windowmap $wid
+  xdotool windowfocus $wid
+else
+  xdotool windowunmap $wid
+fi

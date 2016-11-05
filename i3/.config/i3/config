@@ -6,7 +6,6 @@ bindsym $mod+Shift+q kill
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
 exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
-exec --no-startup-id urxvt -name journal -geometry 500x400 -e nvim $HOME/jrnl/$(date +%Y)/$(date +%b)_$(date +%d).wiki
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
@@ -16,18 +15,13 @@ for_window [class="zeal"] floating enable
 # -- top down terminal
 for_window [instance="urxvtq"] floating enable, move workspace current, move position 0 0
 # -- journal in scratchpad
-for_window [instance="journal"] move window to scratchpad
-for_window [instance="jrnl"] move window to scratchpad
+for_window [instance="jrnl"] floating enable
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
 bindsym $mod+n exec . /home/vigneshk/.scripts/toggleKeepass
-<<<<<<< HEAD
-bindsym $mod+t exec . /home/vigneshk/.scripts/urxvtq
-=======
 bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
->>>>>>> 2f99fef... Dropdown terminal goes to the absolute 0,0 position.
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 # -- drive push/pull toggle
