@@ -16,6 +16,8 @@ for_window [class="zeal"] floating enable
 for_window [instance="urxvtq"] floating enable, move workspace current, move position 0 0
 # -- journal in scratchpad
 for_window [instance="jrnl"] floating enable
+for_window [class="urxvtq"] floating enable
+for_window [instance="urxvtq"] floating enable
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
