@@ -4,7 +4,7 @@ wid=$(xdotool search --classname urxvtq)
 # width = 8x and height=16x
 
 if [ -z "$wid" ]; then
-  urxvt -name urxvtq -geometry 80x28
+  urxvt -name urxvtq -geometry 140x20
   wid=$(xdotool search --classname urxvtq)
   xdotool windowfocus $wid
   xdotool key Control_L+l

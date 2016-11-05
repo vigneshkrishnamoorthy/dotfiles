@@ -4,6 +4,10 @@ The list of configuration files contained in the repo is here. Use gnu-stow dire
 
 - `wmutils`: window manipulation for KeepassX system.
 - `xdotool`: window manipulation for the jrnl system in place.
+>>>>>>> 813c605... [WIP] Dropdown terminal goes to the absolute 0,0 position.
+
+- `wmutils`: window manipulation for KeepassX system.
+- `xdotool`: window manipulation for the jrnl system in place.
 
 All of the folders are now linked using gnu/stow. Install stow from the repository and use `stow /foldername/` to make the required symlinks.
 
