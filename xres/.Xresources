@@ -21,13 +21,17 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Copy and Paste using Clipboard
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+! Install: urxvt-perls
+URxvt.keysym.M-c: clipboard:copy
+URxvt.keysym.M-v: clipboard:paste
+URxvt.keysym.M-C-v: clipboard:paste_escaped
 
 ! Font resize
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger: C-Up
+! Install: urxvt-resize-font-git
+URxvt.keysym.C-Up: resize-font:bigger
+URxvt.keysym.C-Down: resize-font:smaller
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-slash: resize-font:show
 
 ! Remove scroll bar
 *URxvt*scrollBar: False
