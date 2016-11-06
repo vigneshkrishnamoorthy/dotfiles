@@ -56,33 +56,45 @@ rofi.color-window:                   #ffffff,#f5f5f5
 rofi.separator-style:                solid
 !
 
-*foreground:    #ddeedd
-*background:    #131D24
+! Nyquil by Poony from Dotshare.it
+!
+*background:    #151515
+*foreground:    #C7C79D
 
-! Coral Reef by Poony
-!black
-*color0:    #25374A
-*color8:    #3A526B
-!red
-*color1:    #BD4A4A
-*color9:    #CC6666
-!green
-*color2:    #B7CE42
-*color10:   #BDE077
-!yellow
-*color3:    #FEA63C
-*color11:   #FFE863
-!blue
-*color4:    #66AABB
-*color12:   #AACCBB
-!magenta
-*color5:    #F26B9E
-*color13:   #ff5879
-!cyan
-*color6:    #72AD8C
-*color14:   #9FE3BC
-!white
-*color7:    #DDEEDD
-*color15:   #FFFFFF
+! black
+*color0:        #222222
+*color8:        #666666
 
+! red
+*color1:        #ca637c
+*color9:        #d9799b
+
+! green
+*color2:        #b7ce42
+*color10:       #cce164
+
+! yellow
+*color3:        #f1ab57
+*color11:       #dbd162
+
+! blue
+*color4:        #66aabb
+*color12:       #aaccbb
+
+! magenta
+*color5:        #9f8fbc
+*color13:       #c2a1ff
+
+! cyan
+*color6:        #7ea79f
+*color14:       #9bc4bd
+
+! white
+*color7:        #C7C79D
+*color15:       #e4e4b9
+
+!Colored man pages
+URxvt.colorIT:  #9f8fbc
+URxvt.colorBD:  #9bc4bd
+URxvt.colorUL:  #b7ce42
 ! vim: ft=xdefaults

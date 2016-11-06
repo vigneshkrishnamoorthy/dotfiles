@@ -66,7 +66,7 @@ filetype plugin on
 
 " ==== Sensible Settings ==== "
 
-colorscheme jellybeans      " colors
+colorscheme badwolf " colors
 
 syntax on                   " Enables syntax highlighting
 set hidden                  " hides buffers
