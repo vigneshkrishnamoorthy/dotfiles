@@ -30,6 +30,7 @@ Plugin 'scrooloose/syntastic'
 " - covers json files
 Plugin 'elzr/vim-json'
 " - miscellaneous
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-sensible'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
