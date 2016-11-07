@@ -5,7 +5,8 @@ bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
-exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
+exec . /home/vigneshk/.scripts/drive_pull
+exec . /home/vigneshk/.scripts/battcheck
 
 # -- scratchpad initialize
 for_window [class="Keepassx"] floating enable
@@ -29,8 +30,8 @@ bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 # -- drive push/pull toggle
-bindsym Mod1+p exec "drive push --no-prompt $HOME/jrnl; echo Successful"
-bindsym Mod1+o exec "drive pull --no-prompt $HOME/jrnl; echo Successful"
+bindsym Mod1+p exec . /home/vigneshk/.scripts/drive_push
+bindsym Mod1+o exec . /home/vigneshk/.scripts/drive_pull
 # -- custom function key stuff
 bindsym F12 exec . /home/vigneshk/.scripts/urxvtq
 
@@ -90,6 +91,12 @@ bindsym Mod1+shift+s move scratchpad
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Caps Lock Mode bindings
+mode "caps" {
+    bindsym Caps_Lock mode "default"
+}
+bindsym Caps_Lock mode "Caps-Lock"
 
 # Resize Mode bindings
 mode "resize" {

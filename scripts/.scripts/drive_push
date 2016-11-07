@@ -1,0 +1,7 @@
+#!/bin/bash
+
+folderPath=$HOME/jrnl
+
+drive push --no-prompt $HOME/jrnl
+
+notify-send "Google Drive: Push Successful" --icon=document-send

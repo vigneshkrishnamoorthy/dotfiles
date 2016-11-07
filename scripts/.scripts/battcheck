@@ -1,0 +1,22 @@
+#!/bin/bash
+
+while true
+do
+    battlevel=`acpi -b | uniq | awk '{ print $4 }' | grep -P -o "[0-9]+(?=%)"`
+    adapter=`acpi -a | uniq | awk '{ print $3 }'`
+    if [ $battlevel -ge 80 ]; then
+        if [ $adapter = "off-line" ]; then
+            notify-send "You are on battery." --icon=battery
+        else [ $adapter = "on-line" ]
+        fi
+    fi
+    if [ $battlevel -le 30 ]; then
+        if [ $battlevel -le 10 ]; then
+            notify-send "Shutdown computer to save work." --icon=battery-caution
+        else
+            notify-send "Connect to charger." --icon=battery-low
+        fi
+    fi
+    
+    sleep 300
+done
