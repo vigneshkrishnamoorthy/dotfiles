@@ -18,6 +18,8 @@ for_window [instance="urxvtq"] floating enable, move workspace current, move pos
 for_window [instance="jrnl"] floating enable
 for_window [class="urxvtq"] floating enable
 for_window [instance="urxvtq"] floating enable
+# -- sticky mpv
+for_window [class="mpv"] sticky enable, floating enable
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
@@ -135,8 +137,8 @@ bar {
     position bottom
     workspace_buttons yes
     colors {
-    # Adobe Colors: Campfire
-        background #588C7E
+        # Custom : You Want It Darker
+        background #151515
         statusline #E7E7E5
         # separator  #51C4D4
 
