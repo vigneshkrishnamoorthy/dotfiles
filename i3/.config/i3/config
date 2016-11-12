@@ -15,8 +15,8 @@ for_window [class="Zeal"] floating enable
 for_window [class="zeal"] floating enable
 # -- top down terminal
 for_window [instance="urxvtq"] floating enable, move workspace current, move position 0 0
-# -- journal in scratchpad
 for_window [instance="jrnl"] floating enable
+for_window [instance="todo"] floating enable, move workspace current
 for_window [class="urxvtq"] floating enable
 for_window [instance="urxvtq"] floating enable
 # -- sticky mpv
@@ -26,9 +26,10 @@ for_window [class="mpv"] sticky enable, floating enable
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
 bindsym $mod+n exec . /home/vigneshk/.scripts/toggleKeepass
-bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
+bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
+bindsym Mod1+t exec . /home/vigneshk/.scripts/todovt
 # -- drive push/pull toggle
 bindsym Mod1+p exec . /home/vigneshk/.scripts/drive_push
 bindsym Mod1+o exec . /home/vigneshk/.scripts/drive_pull

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+wid=$(xdotool search --classname todo)
+
+if [ -z "$wid" ]; then
+    urxvt -name todo -geometry 140x50 -e nvim $HOME/jrnl/TODO.wiki
+    wid=$(xdotool search --classname todo)
+    xdotool windowfocus $wid
+    xdotool key Control_L+1
+elif [ -z "$(xdotool search --onlyvisible --classname todo 2>/dev/null)" ]; then
+  xdotool windowmap $wid
+  xdotool windowfocus $wid
+else
+  xdotool windowunmap $wid
+fi
