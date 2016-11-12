@@ -1,5 +1,6 @@
 set nocompatible
 filetype plugin on
+filetype plugin indent on
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
@@ -58,8 +59,9 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 " - ledger
 Plugin 'ledger/vim-ledger'
-" - vimwiki
+" - vimwiki/org-mode
 Plugin 'vimwiki/vimwiki.git'
+Plugin 'jceb/vim-orgmode'
 
 call vundle#end()
 
