@@ -3,7 +3,7 @@
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 	if [ ! "${BRANCH}" == "" ]
-	then
+    then
 		STAT=`parse_git_dirty`
 		echo "[${BRANCH}${STAT}]"
 	else
@@ -46,6 +46,7 @@ function parse_git_dirty {
 }
 
 export PS1="\033[38;5;4m\u\[\e[m\]|\[\e[33m\]\W\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\]$> "
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
