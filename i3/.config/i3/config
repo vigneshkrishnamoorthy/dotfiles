@@ -28,6 +28,7 @@ bindsym $mod+n exec . /home/vigneshk/.scripts/toggleKeepass
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
 bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
+bindsym Mod1+t exec . /home/vigneshk/.scripts/todovt
 # -- drive push/pull toggle
 bindsym Mod1+p exec . /home/vigneshk/.scripts/drive_push
 bindsym Mod1+o exec . /home/vigneshk/.scripts/drive_pull
