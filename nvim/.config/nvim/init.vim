@@ -1,6 +1,6 @@
 set nocompatible
 filetype plugin on
-filetype plugin indent on
+filetype indent on
 
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
@@ -191,3 +191,5 @@ let g:pandoc#modules#disabled = ["folding"]
 " - vim-ledger settings
 let g:ledger_maxwidth = 80
 let g:ledger_fillstring = '   -'
+let g:ledger_fold_blanks = 0
+let g:ledger_detailed_first = 1
