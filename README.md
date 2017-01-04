@@ -17,3 +17,12 @@ All of the folders are now linked using gnu/stow. Install stow from the reposito
 - Git clone the vundle git-repo to the bundle folder:
     `git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim`
 - Run `VundleInstall` in neovim before sourcing the `init.vim` file.
+
+### Spacemacs Notes
+
+To install spacemacs:
+
+```
+mv .emacs.d .emacs.d.bak
+git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+```
