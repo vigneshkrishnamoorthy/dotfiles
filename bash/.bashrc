@@ -45,7 +45,9 @@ function parse_git_dirty {
 	fi
 }
 
-export PS1="\033[38;5;4m\u\[\e[m\]|\[\e[33m\]\W\[\e[m\] \[\e[36m\]\`parse_git_branch\`\[\e[m\]$> "
+# export PS1="\033[38;5;4m\u\[\e[m\]|\[\e[33m\]\W\[\e[m\] \[\e[36m\]\`parse_git_branch\`$>\[\e[m\]"
+export PS1='\[\e[01;33m\][\w]\[\e[01;34m\] > \[\e[m\]'
+
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
