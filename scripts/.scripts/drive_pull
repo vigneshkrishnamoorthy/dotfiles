@@ -1,8 +1,8 @@
 
 #!/bin/bash
 
-folderPath=$HOME/jrnl
+folderPath=$HOME/doc/jrnl
 
-drive pull --no-prompt $HOME/jrnl;
+drive pull --no-prompt $HOME/doc/jrnl;
 
 notify-send "Google Drive: Pull Successful" --icon=document-save

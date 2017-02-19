@@ -3,7 +3,7 @@
 wid=$(xdotool search --classname todo)
 
 if [ -z "$wid" ]; then
-    emacs $HOME/jrnl/TODO.org
+    emacs $HOME/doc/jrnl/TODO.org
     wid=$(xdotool search --classname emacs)
     xdotool windowfocus $wid
     xdotool key Control_L+1
