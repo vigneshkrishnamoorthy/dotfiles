@@ -4,14 +4,13 @@ general {
     interval = 10
 }
 
-order += "wireless wlan0"
+order += "wireless wlp3s0"
 order += "battery 0"
 order += "volume master"
 order += "tztime local"
 
-wireless wlan0 {
-        format_up = "W: %essid"
-        format_down = "W: %ip"
+wireless wlp3s0 {
+        format_up = "%ip on %essid (%quality)"
 }
 
 battery 0 {
