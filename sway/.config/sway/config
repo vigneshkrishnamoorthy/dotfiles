@@ -181,11 +181,25 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+gaps inner 5
+gaps outer 10
+
+# Set window information
+for_window [class="^.*"] border pixel 3
+
+# Set colors for windows
+#Class                  border  Backgr. text    indicator child_border
+client.focused          #549E39 #374140 #000000 #000000     #549E39
+client.focused_inactive #334D5C #374140 #000000 #000000     #334D5C
+client.urgent           #EFC94C #374140 #000000 #000000     #EFC94C
+client.background       #334D5C #374140 #000000 #000000     #334DFC
+
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    status_command i3status
     position bottom
     colors {
         statusline #ffffff
