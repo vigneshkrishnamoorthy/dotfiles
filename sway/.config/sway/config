@@ -201,9 +201,12 @@ client.background       #334D5C #374140 #000000 #000000     #334DFC
 bar {
     status_command i3status
     position bottom
+
+    font pango: Inconsolata 10
+
     colors {
-        statusline #ffffff
-        background #323232
+        statusline #EFC94C
+        background #374140
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
