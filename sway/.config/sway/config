@@ -174,7 +174,7 @@ for_window [class="^.*"] border pixel 3
 client.focused          #549E39 #374140 #000000 #000000     #549E39
 client.focused_inactive #334D5C #374140 #000000 #000000     #334D5C
 client.urgent           #EFC94C #374140 #000000 #000000     #EFC94C
-client.background       #334D5C #374140 #000000 #000000     #334DFC
+client.background       #334D5C
 
 #
 # Status Bar:
