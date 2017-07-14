@@ -1,0 +1,152 @@
+community/acpid 2.0.28-1
+extra/alsa-utils 1.1.4-1
+antergos/antergos-keyring 20170524-1 (antergos-base)
+antergos/antergos-mirrorlist 20170527-2 (antergos-base)
+core/autoconf 2.69-4 (base-devel)
+core/automake 1.15.1-1 (base-devel)
+core/b43-fwcutter 019-1
+core/bash 4.4.012-2 (base)
+extra/bash-completion 2.5-1
+extra/bind-tools 9.11.1.P3-1
+core/binutils 2.28.0-3 (base-devel)
+core/bison 3.0.4-2 (base-devel)
+core/btrfs-progs 4.11.1-1
+core/bzip2 1.0.6-6 (base)
+extra/bzr 2.7.0-2
+community/cabextract 1.6-1
+extra/chromium 59.0.3071.115-1
+extra/cifs-utils 6.7-2
+local/clipit 1.4.3-1
+extra/cmake 3.8.2-1
+core/coreutils 8.27-1 (base)
+core/crda 3.18-1
+core/cryptsetup 1.7.5-1 (base)
+extra/cups 2.2.4-2
+extra/cups-pk-helper 0.2.6-1
+core/device-mapper 2.02.172-2 (base)
+core/dhcpcd 6.11.5-1 (base)
+core/dialog 1:1.3_20170509-1
+core/diffutils 3.6-1 (base)
+core/dmraid 1.0.0.rc16.3-10
+core/dosfstools 4.1-1
+core/e2fsprogs 1.43.4-1 (base)
+core/efibootmgr 15-1
+community/exfat-utils 1.2.7-1
+extra/f2fs-tools 1.8.0-1
+core/fakeroot 1.21-2 (base-devel)
+extra/feh 2.19-1
+core/file 5.31-1 (base base-devel)
+core/filesystem 2017.03-2 (base)
+core/findutils 4.6.0-2 (base base-devel)
+core/flex 2.6.4-1 (base-devel)
+community/fuseiso 20070708-6
+core/gawk 4.1.4-2 (base base-devel)
+core/gcc 7.1.1-3 (base-devel)
+core/gcc-libs 7.1.1-3 (base)
+core/gettext 0.19.8.1-2 (base base-devel)
+extra/git 2.13.2-1
+core/glibc 2.25-5 (base)
+core/grep 3.1-1 (base base-devel)
+core/groff 1.22.3-7 (base-devel)
+core/grub 2:2.02-1
+antergos/grub2-theme-antergos 0.1-1
+extra/gsfonts 20160531-3
+core/gzip 1.8-2 (base base-devel)
+extra/haveged 1.9.1-2
+extra/hplip 3.17.6-2
+community/i3status 2.11-2 (i3)
+core/inetutils 1.9.4-5 (base)
+extra/intel-ucode 20170707-1
+core/iproute2 4.12.0-2 (base)
+core/iputils 20161105.1f2bb12-2 (base)
+core/ipw2100-fw 1.3-8
+core/ipw2200-fw 3.1-6
+local/j4-dmenu-desktop-git 2.15.r0.gca48788-1
+core/jfsutils 1.1.15-4 (base)
+extra/keychain 2.8.3-1
+local/ledger 3.1.1-3
+core/less 487-1 (base)
+multilib/lib32-mesa 17.1.4-1
+extra/libotf 0.9.13-2
+core/libtool 2.4.6-8 (base-devel)
+extra/libtxc_dxtn 1.0.1-6
+extra/libva-intel-driver 1.8.2-1
+core/licenses 20140629-2 (base)
+core/linux 4.11.9-1 (base)
+core/logrotate 3.12.3-1 (base)
+core/lvm2 2.02.172-2 (base)
+core/m4 1.4.18-1 (base-devel)
+core/make 4.2.1-2 (base-devel)
+core/man-db 2.7.6.1-2 (base)
+core/man-pages 4.11-1 (base)
+core/mdadm 4.0-1 (base)
+extra/modemmanager 1.6.8-1
+core/nano 2.8.5-1 (base)
+community/neovim 0.2.0-2
+core/net-tools 1.60.20160710git-1
+core/netctl 1.12-2 (base)
+extra/networkmanager 1.8.2-1 (gnome)
+core/nfs-utils 2.1.1-4
+core/nilfs-utils 2.2.6-1
+extra/ntfs-3g 2017.3.23-1
+core/openssh 7.5p1-2
+community/os-prober 1.75-1
+core/pacman 5.0.2-1 (base base-devel)
+community/pandoc 1.19.2.1-90
+core/patch 2.7.5-1 (base-devel)
+core/pciutils 3.5.4-1 (base)
+core/pcmciautils 018-7 (base)
+core/perl 5.26.0-1 (base)
+core/pkg-config 0.29.2-1 (base-devel)
+extra/pkgfile 17-1
+community/powerline-fonts 2.6-1
+core/procps-ng 3.3.12-1 (base)
+core/psmisc 23.1-1 (base)
+extra/python-gobject 3.24.1-1
+extra/python-pyqt5 5.9-1
+extra/python-virtualenv 15.1.0-1
+community/ranger 1.8.1-1
+core/reiserfsprogs 3.6.25-1 (base)
+local/rofi-git 1.3.1.r692.gf62216fa-1
+extra/rsync 3.1.2-2
+community/rxvt-unicode 9.22-3
+core/s-nail 14.8.16-2 (base)
+core/sed 4.4-1 (base base-devel)
+core/shadow 4.4-3 (base)
+extra/sharutils 4.15.2-2
+local/spacefm 1.0.5-3
+community/splix 2.0.0-13
+community/stow 2.2.2-2
+core/sudo 1.8.20.p2-1 (base-devel)
+community/sway 0.13.0-1
+core/sysfsutils 2.1.0-9 (base)
+core/systemd-sysvcompat 233.75-3 (base)
+core/tar 1.29-2 (base)
+core/texinfo 6.4-1 (base base-devel)
+community/tlp 1.0-1
+extra/ttf-dejavu 2.37-1
+local/ttf-google-fonts-git 20170626-2
+community/udevil 0.4.4-1
+extra/unrar 1:5.5.6-2
+extra/unzip 6.0-12
+community/urxvt-perls 2.2-1
+local/urxvt-resize-font-git 14.97c91ec-1
+community/usb_modeswitch 2.5.0-1
+core/usbutils 008-1 (base)
+core/util-linux 2.29.2-2 (base base-devel)
+community/uudeview 0.5.20-13
+core/vi 1:070224-2 (base)
+extra/wget 1.19.1-2
+core/which 2.21-2 (base base-devel)
+extra/whois 5.2.16-1
+core/wireless_tools 30.pre9-1
+core/wpa_actiond 1.4-2
+core/xfsprogs 4.11.0-1 (base)
+extra/xorg-xrdb 1.1.0-2 (xorg-apps xorg)
+core/xz 5.2.3-1
+antergos/yaourt 1.8.1-1
+community/zathura 0.3.7-1
+community/zathura-djvu 0.2.6-1
+community/zathura-pdf-mupdf 0.3.1-3
+core/zd1211-firmware 1.5-1
+extra/zip 3.0-7
