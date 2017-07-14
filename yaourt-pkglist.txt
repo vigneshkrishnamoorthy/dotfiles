@@ -8,7 +8,7 @@ core/b43-fwcutter 019-1
 core/bash 4.4.012-2 (base)
 extra/bash-completion 2.5-1
 extra/bind-tools 9.11.1.P3-1
-core/binutils 2.28.0-3 (base-devel)
+core/binutils 2.28.0-4 (base-devel)
 core/bison 3.0.4-2 (base-devel)
 core/btrfs-progs 4.11.1-1
 core/bzip2 1.0.6-6 (base)
@@ -41,11 +41,11 @@ core/findutils 4.6.0-2 (base base-devel)
 core/flex 2.6.4-1 (base-devel)
 community/fuseiso 20070708-6
 core/gawk 4.1.4-2 (base base-devel)
-core/gcc 7.1.1-3 (base-devel)
-core/gcc-libs 7.1.1-3 (base)
+core/gcc 7.1.1-4 (base-devel)
+core/gcc-libs 7.1.1-4 (base)
 core/gettext 0.19.8.1-2 (base base-devel)
-extra/git 2.13.2-1
-core/glibc 2.25-5 (base)
+extra/git 2.13.3-2
+core/glibc 2.25-7 (base)
 core/grep 3.1-1 (base base-devel)
 core/groff 1.22.3-7 (base-devel)
 core/grub 2:2.02-1
@@ -91,7 +91,7 @@ core/nilfs-utils 2.2.6-1
 extra/ntfs-3g 2017.3.23-1
 core/openssh 7.5p1-2
 community/os-prober 1.75-1
-core/pacman 5.0.2-1 (base base-devel)
+core/pacman 5.0.2-2 (base base-devel)
 community/pandoc 1.19.2.1-90
 core/patch 2.7.5-1 (base-devel)
 core/pciutils 3.5.4-1 (base)
@@ -136,6 +136,7 @@ core/usbutils 008-1 (base)
 core/util-linux 2.29.2-2 (base base-devel)
 community/uudeview 0.5.20-13
 core/vi 1:070224-2 (base)
+antergos/vivaldi 1.10.867.42-1 (browser)
 extra/wget 1.19.1-2
 core/which 2.21-2 (base base-devel)
 extra/whois 5.2.16-1
