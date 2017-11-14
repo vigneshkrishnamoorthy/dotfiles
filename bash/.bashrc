@@ -55,5 +55,5 @@ PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-BROWSER=/usr/bin/chromium
+BROWSER=/usr/bin/firefox
 EDITOR=/usr/bin/nvim
