@@ -140,7 +140,7 @@ client.background       #334D5C #374140 #000000 #000000     #334DFC
 
 # i3-bar on bottom
 bar {
-    status_command i3status
+    status_command i3blocks
     position bottom
     workspace_buttons yes
     colors {
