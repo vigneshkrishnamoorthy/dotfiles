@@ -9,8 +9,8 @@ exec . /home/vigneshk/.scripts/drive_pull
 exec . /home/vigneshk/.scripts/battcheck
 
 # -- scratchpad initialize
-for_window [class="Keepassx"] floating enable
-for_window [class="keepassx"] floating enable
+# for_window [class="Keepassx"] floating enable
+# for_window [class="keepassx"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="zeal"] floating enable
 # -- top down terminal
