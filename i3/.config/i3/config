@@ -11,8 +11,8 @@ exec . /home/vigneshk/.scripts/battcheck
 # -- scratchpad initialize
 # for_window [class="Keepassx"] floating enable
 # for_window [class="keepassx"] floating enable
-for_window [class="Zeal"] floating enable
-for_window [class="zeal"] floating enable
+# for_window [class="Zeal"] floating enable
+# for_window [class="zeal"] floating enable
 # -- top down terminal
 for_window [instance="urxvtq"] floating enable, move workspace current, move position 0 0
 for_window [instance="jrnl"] floating enable
