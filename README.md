@@ -15,6 +15,7 @@ All of the folders are now linked using gnu/stow. Install stow from the reposito
 - For mpd, create a copy at /etc/mpd.conf as mpd looks at this configuration file on boot up.
 - `acpi` needs to be installed for showing the battery in the bar.
 - `urxvt-perls` for the mouse-less select to work best.
+- Add `libinput-gestures` for performing gestures using the touchpad.
 
 ### Neovim notes
 
