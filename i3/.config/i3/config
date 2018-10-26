@@ -5,21 +5,7 @@ bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
-exec . /home/vigneshk/.scripts/drive_pull
-exec . /home/vigneshk/.scripts/battcheck
-
-# -- scratchpad initialize
-# for_window [class="Keepassx"] floating enable
-# for_window [class="keepassx"] floating enable
-# for_window [class="Zeal"] floating enable
-# for_window [class="zeal"] floating enable
-# -- top down terminal
-for_window [instance="urxvtq"] floating enable, move workspace current, move position 0 0
-for_window [instance="jrnl"] floating enable
-for_window [class="urxvtq"] floating enable
-for_window [instance="urxvtq"] floating enable
-# -- sticky mpv
-for_window [class="mpv"] sticky enable, floating enable
+exec --no-startup-id nm-applet
 
 # ===== APPLICATION STARTERS ===== #
 bindsym $mod+Return exec i3-sensible-terminal
@@ -27,18 +13,13 @@ bindsym $mod+d exec --no-startup-id rofi -location 2 -show run
 bindsym $mod+n exec . /home/vigneshk/.scripts/toggleKeepass
 # ===== Secondary modifier ==== #
 bindsym Mod1+l exec i3lock -c 000000 -n
-bindsym Mod1+j exec . /home/vigneshk/.scripts/jrnlvt
-bindsym Mod1+t exec . /home/vigneshk/.scripts/todovt
-# -- drive push/pull toggle
-bindsym Mod1+p exec . /home/vigneshk/.scripts/drive_push
-bindsym Mod1+o exec . /home/vigneshk/.scripts/drive_pull
-# -- custom function key stuff
-bindsym F12 exec . /home/vigneshk/.scripts/urxvtq
 
 # ===== KEYBINDINGS ===== #
 # -- volumn keys
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 # -- change window focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
