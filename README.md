@@ -2,8 +2,11 @@
 
 The list of configuration files contained in the repo is here. Use gnu-stow directly to avoid all sort of pains from now on. Here are a few additional packages that have to be installed to make this work:
 
-- `wmutils`: window manipulation for KeepassX system.
-- `xdotool`: window manipulation for the jrnl system in place.
+- i3-gaps
+- i3-blocks
+- gnu/stow
+- keychain
+
 
 All of the folders are now linked using gnu/stow. Install stow from the repository and use `stow /foldername/` to make the required symlinks.
 
@@ -11,6 +14,7 @@ All of the folders are now linked using gnu/stow. Install stow from the reposito
 
 - For mpd, create a copy at /etc/mpd.conf as mpd looks at this configuration file on boot up.
 - `acpi` needs to be installed for showing the battery in the bar.
+- `urxvt-perls` for the mouse-less select to work best.
 
 ### Neovim notes
 
