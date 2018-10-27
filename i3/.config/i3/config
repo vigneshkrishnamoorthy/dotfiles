@@ -5,6 +5,7 @@ bindsym $mod+Shift+q kill
 
 # ===== STARTUP EXECUTORS =====
 # -- autostarts
+exec xset -b
 exec --no-startup-id nm-applet
 
 # ===== APPLICATION STARTERS ===== #
