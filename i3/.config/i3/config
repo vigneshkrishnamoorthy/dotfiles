@@ -140,4 +140,3 @@ bar {
 }
 
 exec xrdb -merge $HOME/.Xresources
-exec xrdb -merge $HOME/.Xdefaults
