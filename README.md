@@ -6,6 +6,9 @@ The list of configuration files contained in the repo is here. Use gnu-stow dire
 - i3-blocks
 - gnu/stow
 - keychain
+- rxvt-unicode
+- urxvt-perls - for mouseless text selection and navigation in the terminal
+- acpi - for battery information in the bar
 
 
 All of the folders are now linked using gnu/stow. Install stow from the repository and use `stow /foldername/` to make the required symlinks.
@@ -15,19 +18,9 @@ All of the folders are now linked using gnu/stow. Install stow from the reposito
 - For mpd, create a copy at /etc/mpd.conf as mpd looks at this configuration file on boot up.
 - `acpi` needs to be installed for showing the battery in the bar.
 - `urxvt-perls` for the mouse-less select to work best.
-- Add `libinput-gestures` for performing gestures using the touchpad.
 
 ### Neovim notes
 
 - Git clone the vundle git-repo to the bundle folder:
     `git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim`
 - Run `VundleInstall` in neovim before sourcing the `init.vim` file.
-
-### Spacemacs Notes
-
-To install spacemacs:
-
-```
-mv .emacs.d .emacs.d.bak
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-```
