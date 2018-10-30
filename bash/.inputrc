@@ -1,0 +1,20 @@
+# do not bell on tab-completion
+set bell-style none
+
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on
+
+# Show extra file information when completing, like `ls -F` does
+set visible-stats on
+
+# Make Tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# Use alt/meta + Delete to delete the preceding word
+"\e[3;3~": kill-word
+
+# Enable alt arrows
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
