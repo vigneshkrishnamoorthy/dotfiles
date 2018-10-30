@@ -138,3 +138,6 @@ bar {
         urgent_workspace   #588C7E #8C4646 #588C7E
     }
 }
+
+exec xrdb -merge $HOME/.Xresources
+exec xrdb -merge $HOME/.Xdefaults
