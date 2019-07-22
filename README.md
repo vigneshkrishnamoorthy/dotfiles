@@ -9,6 +9,7 @@ The list of configuration files contained in the repo is here. Use gnu-stow dire
 - rxvt-unicode
 - urxvt-perls - for mouseless text selection and navigation in the terminal
 - acpi - for battery information in the bar
+- xbindkeys - for adding keyboard controls on Spotify Linux Client
 
 
 All of the folders are now linked using gnu/stow. Install stow from the repository and use `stow /foldername/` to make the required symlinks.
