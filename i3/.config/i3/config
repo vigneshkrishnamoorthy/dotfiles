@@ -16,8 +16,8 @@ bindsym Mod1+l exec i3lock -c 000000 -n
 
 # ===== KEYBINDINGS ===== #
 # -- volumn keys
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ +3%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ -3%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -3%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +3%
 # bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
 # bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
 bindsym XF86AudioMute exec amixer -q set Master 1+ toggle
